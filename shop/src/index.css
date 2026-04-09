@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-navy text-cream font-body;
+    --color-gold: #C9A84C;
+    --color-gold-light: #E8C97A;
+    --color-navy: #0A0D14;
+    --color-cream: #E8E2D5;
+    --color-muted: #8A8070;
+    --color-border: rgba(201, 168, 76, 0.2);
+  }
+}
+
+@layer utilities {
+  .text-cream { color: #E8E2D5; }
+  .text-muted { color: #8A8070; }
+  .text-gold { color: #C9A84C; }
+  .bg-navy { background-color: #0A0D14; }
+  .bg-navy-2 { background-color: #111622; }
+  .bg-navy-3 { background-color: #1A2035; }
+  .border-gold { border-color: rgba(201, 168, 76, 0.25); }
+  .shimmer-bg {
+    background: linear-gradient(90deg, #111622 25%, #1A2035 50%, #111622 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #C9A84C22 transparent;
+}
